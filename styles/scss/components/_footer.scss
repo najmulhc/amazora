@@ -7,7 +7,14 @@ footer {
     left: 2rem;
     right: 2rem;
   }
-
+  @include media(tablet) {
+    padding: {
+      top: 3rem;
+      bottom: 3rem;
+      left: 2rem;
+      right: 2rem;
+    }
+  }
   @include media(desktop) {
     background-color: $neutral-7;
 
