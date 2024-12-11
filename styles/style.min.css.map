@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["scss/style.scss"],"names":[],"mappings":"AAAA,EACI","file":"style.min.css"}
+{"version":3,"sourceRoot":"","sources":["scss/shared/_variables.scss","scss/components/_footer.scss","scss/style.scss"],"names":[],"mappings":"AAAQ,uHCCN,MDSU,QCRV,iBDcU,QCZR,iBACA,oBACA,kBACA,mBAGF,oBACE,gBACA,iBACA,kBACA,MDJQ,QENZ,EACE,SACA,UACA,sBAKF,KACE,YFXa","file":"style.min.css"}
