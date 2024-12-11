@@ -1,11 +1,12 @@
 @import "shared/variables";
 @import "components/footer";
-
+@import "shared/typography";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
  
 }
 

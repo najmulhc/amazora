@@ -1,6 +1,6 @@
 footer {
   color: $neutral-1;
-  background-color: $neutral-7;
+  background-color: $neutral-6;
   padding: {
     top: 3rem;
     bottom: 3rem;
@@ -8,10 +8,140 @@ footer {
     right: 2rem;
   }
 
-  .footer-logo {
-    font-weight: 500;
-    font-size: 1.5rem;
+  @include media(desktop) {
+    background-color: $neutral-7;
+
+    padding: {
+      top: 5rem;
+      bottom: 5rem;
+      left: 10rem;
+      right: 10rem;
+    }
+  }
+
+  .footer-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
     text-align: center;
-    color: $neutral-1;
+
+    @include media(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 3.06rem;
+      align-items: flex-start;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .logo-part {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+
+      @include media(desktop) {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2rem;
+      }
+      div {
+        width: 1.5rem;
+        height: 1px;
+        background-color: $neutral-4;
+        @include media(desktop) {
+          height: 1.5rem;
+          width: 1px;
+        }
+      }
+      p {
+        color: $neutral-3;
+      }
+    }
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      @include media(desktop) {
+        flex-direction: row;
+        gap: 2.5rem;
+      }
+      a {
+        color: $neutral-1;
+      }
+      a:hover {
+        color: $neutral-3;
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    border-top: 0.5px solid $neutral-4;
+
+    @include media(desktop) {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+    padding: {
+      top: 1.5rem;
+      bottom: 1.5rem;
+    }
+
+    .footer-social {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      @include media(desktop) {
+        width: auto;
+        justify-content: flex-end;
+      }
+      a {
+        width: 1.5rem;
+        height: 1.5rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .footer-info {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 1.75rem;
+      @include media(desktop) {
+        width: 50%;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        gap: 1.75rem;
+        a {
+          font-size: 0.75rem;
+          font-weight: bold;
+          color: $neutral-1;
+        }
+      }
+      p {
+        font-size: 0.75rem;
+        text-align: center;
+        font-weight: 400;
+        color: $neutral-3;
+      }
+    }
   }
 }
