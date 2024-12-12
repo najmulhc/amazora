@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/styles/style.min.css" />
+  </head>
+  <body>
+    <main id="auth">
+      <div id="auth-image">
+        <img src="/assets/images/auth.jpg" alt="Placeholder image " />
+        <h2 class="heading-4">Amazora</h2>
+      </div>
+      <div id="auth-text-container">
+        <h2 class="heading-4">Sign in</h2>
+        <p class="body-2">Don't have an account yet? <a href="">Sign Up</a></p>
+        <form id="auth-form" action="">
+          <div>
+            <label for="email-username">
+              <input class="body-2"
+                type="text"
+                name="email-username" required
+                placeholder="Username or Email address"
+              />
+            </label>
+            <label for="password">
+              <input class="body-2"
+                type="password"
+                name="password"required
+                placeholder="Password"
+                id="input-password"
+
+              />
+              <img
+                src="/assets/icons/auth/eye-open.svg"
+                alt=""
+                id="password-toggler"
+              />
+            </label>
+          <div class="remember">
+              <label for="remember-me">
+              <img
+                id="custom-checkbox"
+                src="/assets/icons/auth/unchecked.svg"
+                alt=""
+              />
+              <input
+                type="checkbox"
+                name="remember-me"
+                id="remember-me" 
+                style="display: none"
+                
+              />
+              <span class="body-2">Remember Me</span>
+            </label>
+            <a href="#" class="caption-2">Forgot Password?</a>
+          </div>
+          </div>
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="/scripts/auth.js"></script>
+  </body>
+</html>

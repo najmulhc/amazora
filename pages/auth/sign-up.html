@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/styles/style.min.css" />
+  </head>
+  <body>
+    <main id="auth">
+      <div id="auth-image">
+        <img src="/assets/images/auth.jpg" alt="Placeholder image " />
+        <h2 class="heading-4">Amazora</h2>
+      </div>
+      <div id="auth-text-container">
+        <h2 class="heading-4">Sign Up</h2>
+        <p class="body-2">Already Have an account <a href="">Sign In</a></p>
+        <form id="auth-form" action="">
+          <div>
+            <label for="username">
+              <input
+                class="body-2"
+                type="text"
+                name="username"
+                required
+                placeholder="Username"
+              />
+            </label>
+            <label for="email">
+              <input
+                class="body-2"
+                type="email"
+                name="email"
+                required
+                placeholder="Email address"
+              />
+            </label>
+            <label for="password">
+              <input
+                class="body-2"
+                type="password"
+                name="password"
+                required
+                placeholder="Password"
+                id="input-password"
+              />
+              <img
+                src="/assets/icons/auth/eye-open.svg"
+                alt=""
+                id="password-toggler"
+              />
+            </label>
+            <div class="remember">
+              <label for="remember-me">
+                <img
+                  id="custom-checkbox"
+                  src="/assets/icons/auth/unchecked.svg"
+                  alt=""
+                />
+                <input
+                  type="checkbox"
+                  name="remember-me"
+                  id="remember-me"
+                  style="display: none"
+                />
+                <span class="caption-2"
+                  >I agree with <a href="#"> Privacy Policy</a> and
+                  <a href="#">Terms of Use</a></span
+                >
+              </label>
+            </div>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="/scripts/auth.js"></script>
+  </body>
+</html>

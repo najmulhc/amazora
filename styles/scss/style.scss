@@ -1,9 +1,10 @@
 @import "shared/variables";
 @import "components/footer";
-@import 'components/button';
+@import "components/button";
 @import "shared/typography";
 @import "components/header";
 @import "components/mobile-header";
+@import "pages/auth";
 * {
   margin: 0;
   padding: 0;

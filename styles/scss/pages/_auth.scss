@@ -1,0 +1,87 @@
+#auth {
+  max-width: screen;
+  #auth-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+ padding-top: 4rem;
+    }
+    h2 {
+      position: absolute;
+      top: 2rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  #auth-text-container {
+    padding: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+    p {
+      margin-bottom: 2rem;
+      color: $neutral-4;
+      a {
+        font-weight: 600;
+        color: $green;
+      }
+    }
+    form {
+      label {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $neutral-4;
+        input {
+          width: 100%;
+          outline: none;
+          border: none;
+        }
+      }
+      .remember {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        white-space: nowrap;
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 0.75rem;
+          border: none;
+          margin: 0;
+          padding: 0;
+          img {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+          span {
+            color: $neutral-4;
+          }
+        }
+        a {
+          color: $neutral-7;
+        }
+      }
+      button {
+        margin-top: 2rem;
+        width: 100%;
+        padding : {
+          top: 0.62rem;
+          bottom: 0.52rem;
+        }
+      }
+    }
+  }
+}
