@@ -1,5 +1,9 @@
 #auth {
   max-width: screen;
+  @include media(tablet) { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   #auth-image {
     position: relative;
     top: 0;
@@ -7,8 +11,8 @@
     width: 100%;
 
     img {
-      width: 100%;
- padding-top: 4rem;
+      width: 100%; 
+      max-height: 100vh;
     }
     h2 {
       position: absolute;
@@ -22,6 +26,14 @@
     padding: 2rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    @include media(tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      padding-right: 10rem; 
+      padding-left: 5.5rem;
+    }
     h2 {
       margin-bottom: 1.5rem;
     }
