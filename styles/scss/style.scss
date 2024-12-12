@@ -1,16 +1,15 @@
 @import "shared/variables";
 @import "components/footer";
+@import 'components/button';
 @import "shared/typography";
 @import "components/header";
-
+@import "components/mobile-header";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
- 
 }
-
 
 body {
   font-family: $font-poppins;

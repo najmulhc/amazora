@@ -1,5 +1,8 @@
 import { setFooter } from "./components/footer.js";
-import { setHeader } from "./components/header.js";
+import { menuToggler, setHeader } from "./components/header.js";
 
-setHeader()
-setFooter();
+await setHeader();
+await setFooter();
+
+// toggler of the menu bar
+menuToggler();

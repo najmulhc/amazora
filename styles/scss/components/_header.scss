@@ -9,7 +9,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+ 
     .menu-left {
       display: flex;
       gap: 0.25rem;
@@ -33,6 +33,7 @@ header {
       display: flex;
       justify-content: flex-end;
       gap: 0.31rem;
+ 
 
       span {
         background-color: $neutral-7;
@@ -78,7 +79,8 @@ header {
     .mobile-hidden {
       display: none;
       @include media(tablet) {
-        display: block;
+        display: flex;
+        align-items: center;justify-content: center;
         margin-right: 1rem;
       }
     }
