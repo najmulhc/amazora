@@ -1,9 +1,9 @@
 // get the header
 
+import { getState } from "../state/global.js";
 import createSingleMobileMenu from "./single-mobile-menu.js";
 
 const header = document.getElementsByTagName("header")[0]; // the header we will work on
-
 export const setHeader = async () => {
   const res = await fetch("/templates/header.html");
   const stringified = await res.text();
@@ -12,10 +12,14 @@ export const setHeader = async () => {
   const mainHeader = headerEntity.getElementById("main-header");
   const mobileMenu = headerEntity.getElementById("mobile-menu");
 
+
+
   // the header that will be in the
   header.appendChild(mainHeader.content);
   header.appendChild(mobileMenu.content);
 };
+
+
 
 export const menuToggler = () => {
   const menuTogglerBtn = document.getElementById("menu-toggler");
@@ -51,4 +55,6 @@ export const menuToggler = () => {
   menus.map((item) => {
     createSingleMobileMenu(mobileTop, item.name, item.href);
   });
-}
+};
+
+ 
