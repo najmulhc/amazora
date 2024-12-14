@@ -1,0 +1,26 @@
+#bread-crumb {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  li {
+    list-style-type: none;
+
+    a {
+      color: #121212;
+    }
+    &:not(:last-child) {
+      a {
+        color: #605f5f;
+      }
+      &::after{ 
+        display: inline-block;
+        content: url("/assets/icons/bread-crumb/right-arrow.svg");
+        vertical-align: middle;
+        height: 100%;
+      }
+    }
+
+  }
+}

@@ -36,4 +36,7 @@ eyeIcon.addEventListener("click", () => {
 checkboxToggler("custom-checkbox", "remember-me")
 
 const formElem = document.getElementById("auth-form");
-formElem.addEventListener("submit" , )
+formElem.addEventListener("submit" ,  (event  ) => {
+  event.preventDefault();
+  console.log(formElem.elements['email-username'].value);
+} )
