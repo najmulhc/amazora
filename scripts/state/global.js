@@ -1,4 +1,4 @@
-import { getFromLocalStorage, setInLocalStorage } from "../util/localStorage";
+import { getFromLocalStorage, setInLocalStorage } from "../util/localStorage.js";
 
 let state = {};
 
@@ -10,7 +10,7 @@ export const getState = () => {
 export const setState = (info) => {
   state = {
     ...state,
-    info,
+    ...info,
   };
   setInLocalStorage("state", state);
 };
