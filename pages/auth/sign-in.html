@@ -15,22 +15,24 @@
       <div id="auth-text-container">
         <h2 class="heading-4">Sign in</h2>
         <p class="body-2">Don't have an account yet? <a href="">Sign Up</a></p>
-        <form id="auth-form" action="">
+        <form id="sign-in" action="">
           <div>
-            <label for="email-username">
-              <input class="body-2"
+            <label for="email-username" id="input-email-username">
+              <input
+                class="body-2"
                 type="text"
-                name="email-username" required
+                name="email-username"
+                required
                 placeholder="Username or Email address"
               />
             </label>
-            <label for="password">
-              <input class="body-2"
+            <label for="password" id="input-password">
+              <input
+                class="body-2"
                 type="password"
-                name="password"required
-                placeholder="Password"
-                id="input-password"
-
+                name="password"
+                required
+                placeholder="Password" id="password"
               />
               <img
                 src="/assets/icons/auth/eye-open.svg"
@@ -38,24 +40,23 @@
                 id="password-toggler"
               />
             </label>
-          <div class="remember">
+            <div class="remember">
               <label for="remember-me">
-              <img
-                id="custom-checkbox"
-                src="/assets/icons/auth/unchecked.svg"
-                alt=""
-              />
-              <input
-                type="checkbox"
-                name="remember-me"
-                id="remember-me" 
-                style="display: none"
-                
-              />
-              <span class="body-2">Remember Me</span>
-            </label>
-            <a href="#" class="caption-2">Forgot Password?</a>
-          </div>
+                <img
+                  id="custom-checkbox"
+                  src="/assets/icons/auth/unchecked.svg"
+                  alt=""
+                />
+                <input
+                  type="checkbox"
+                  name="remember-me"
+                  id="remember-me"
+                  style="display: none"
+                />
+                <span class="body-2">Remember Me</span>
+              </label>
+              <a href="#" class="caption-2">Forgot Password?</a>
+            </div>
           </div>
           <button type="submit">Sign In</button>
         </form>
