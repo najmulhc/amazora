@@ -6,6 +6,9 @@
 @import "components/header";
 @import "components/mobile-header";
 @import "pages/auth";
+@import "components/features";
+
+
 * {
   margin: 0;
   padding: 0;
@@ -17,12 +20,11 @@ body {
   font-family: $font-poppins;
 }
 
-
 section {
   padding: {
     left: 2rem;
     right: 2rem;
-  };
+  }
   @include media(tablet) {
     padding: {
       left: 10rem;

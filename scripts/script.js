@@ -1,8 +1,10 @@
+import setFeatures from "./components/feature.js";
 import { setFooter } from "./components/footer.js";
 import { menuToggler, setHeader } from "./components/header.js";
 import { getState } from "./state/global.js";
 await setHeader();
 await setFooter();
+await setFeatures();
 
 // toggler of the menu bar
 menuToggler();
