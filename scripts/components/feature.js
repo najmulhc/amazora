@@ -22,7 +22,7 @@ const setFeatures = async () => {
     },
   ];
   const featureContainer = document.getElementById("features-container");
-  const fetchedTemplate = await fetch("/templates/feature-card.html");
+  const fetchedTemplate = await fetch("../../templates/feature-card.html");
   const templateData = await fetchedTemplate.text();
   const perser = new DOMParser();
   const template = perser.parseFromString(templateData, "text/html");

@@ -5,7 +5,7 @@ import createSingleMobileMenu from "./single-mobile-menu.js";
 
 const header = document.getElementsByTagName("header")[0]; // the header we will work on
 export const setHeader = async () => {
-  const res = await fetch("/templates/header.html");
+  const res = await fetch("../../templates/header.html");
   const stringified = await res.text();
   const parser = new DOMParser();
   const headerEntity = parser.parseFromString(stringified, "text/html");
