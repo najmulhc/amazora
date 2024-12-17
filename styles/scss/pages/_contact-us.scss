@@ -1,0 +1,26 @@
+section#contact {
+  display: grid;
+  gap: 1rem;
+
+  @include media(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div {
+    text-align: center;
+    background-color: $neutral-2;
+    padding: 1rem 2rem;
+    @include media(tablet) {
+      padding: 1rem 1rem;
+    }
+    img {
+      margin-bottom: 1rem;
+    }
+    h3 {
+      color: $neutral-4;
+    }
+    p {
+      color: $neutral-7;
+      font-weight: 600;
+    }
+  }
+}

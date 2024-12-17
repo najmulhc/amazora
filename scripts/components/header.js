@@ -41,7 +41,7 @@ export const menuToggler = () => {
     },
     {
       name: "Shop",
-      href: "/pages/shop.html",
+      href: "/pages/shop/shop.html",
     },
     {
       name: "Blog",
