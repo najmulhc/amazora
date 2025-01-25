@@ -14,12 +14,23 @@
   line-height: 1.25rem;
 }
 .heading-1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: 1rem; /* 100% */
   text-transform: uppercase;
+}
+
+.heading-3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.625rem; /* 107.407% */
+  letter-spacing: -0.0625rem;
+
+  
 }
 .heading-4 {
   font-size: 2.5rem;

@@ -8,7 +8,8 @@
 @import "pages/auth";
 @import "components/features";
 @import "pages/contact-us";
-
+@import "components/container";
+@import "pages/account";
 
 * {
   margin: 0;
@@ -16,7 +17,6 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
 body {
   font-family: $font-poppins;
 }
