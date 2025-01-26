@@ -17,5 +17,5 @@ if (accountAddress) {
 const accountDetails = document.getElementById("account-form");
 if (accountDetails) {
    await setUserDetails();
-  accountDetails.appendChild(info)
+
 }
