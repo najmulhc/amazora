@@ -1,11 +1,13 @@
 button {
   background-color: $neutral-7;
-  padding: 1.5rem;
+  padding: .75rem 2.5rem;
   color: white;
+  outline: none;
+  border: none;
   border-radius: 0.375rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  display: inline-block;
   font-size: 1.25rem;
   line-height: 2rem;
+ max-width:fit-content;
 }

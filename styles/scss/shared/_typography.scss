@@ -29,8 +29,6 @@
   font-weight: 500;
   line-height: 3.625rem; /* 107.407% */
   letter-spacing: -0.0625rem;
-
-  
 }
 .heading-4 {
   font-size: 2.5rem;
@@ -66,4 +64,22 @@ h2 {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem;
+}
+.hairline-2 {
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+}
+
+.form-info {
+  color: var(--neutral-04100, #6C7275);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.25rem; /* 166.667% */
 }

@@ -1,23 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Account</title>
-    <link rel="stylesheet" href="/styles/style.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/style.min.css" />
+  </head>
+  <body>
     <header></header>
- <main class="container account">
-    <h3 class="heading-3"> My Account</h3>
-    
-    <div id="account-container">
+    <main class="container account">
+      <h3 class="heading-3">My Account</h3>
+
+      <div id="account-container">
         <div id="account-nav"></div>
-        <div id="account-content"></div>
+        <form id="account-content">
+          <div class="form-section">
+            <h4 class="heading-7">Account Detail</h4>
+            <label for="first-name">
+              <p class="hairline-2">First Name</p>
+              <input
+                type="text"
+                name="first-name"
+                class="body-2"
+                value="John"
+                id="first-name"
+              />
+            </label>
+            <label for="last-name">
+              <p class="hairline-2">Last Name</p>
+              <input
+                type="text"
+                name="last-name"
+                class="body-2"
+                value="Doe"
+                id="last-name"
+              />
+            </label>
+            <label for="Display-name">
+              <p class="hairline-2">Display Name</p>
+              <input
+                type="text"
+                name="display-name"
+                class="body-2"
+                value="John Doe"
+                id="display-name"
+              />
+              <span class="form-info">This will be how your name will be displayed in the account section and in reviews</p>
+            </label>
+          
+          </div>
+       
+          <div class="form-section">
+            <h4 class="heading-7">Password</h4>
+            <label for="first-name">
+              <p class="hairline-2">Old Password</p>
+              <input
+                type="password"
+                name="old-password"
+                class="body-2"
+                value="lorem"
+                id="old-password"
+              />
+            </label>
+            <label for="first-name">
+              <p class="hairline-2">New Password</p>
+              <input
+                type="password"
+                name="new-password"
+                class="body-2"
+                value="lorem"
+                id="new-password"
+              />
+            </label>
+            <label for="first-name">
+              <p class="hairline-2">Repeat Password</p>
+              <input
+                type="password"
+                name="repat-password"
+                class="body-2"
+                value="lorem"
+                id="repeat-password"
+              />
+              <span class="form-info">Your given password did not matched. </span>
+            </label>
+        
+            <button class="form-btn" type="submit">Save Changes</button>
+          </div>
+       
+        </form>
       </div>
- </main>
+    </main>
     <footer></footer>
     <script type="module" src="/scripts/script.js"></script>
     <script type="module" src="/scripts/components/account-nav.js"></script>
-</body>
+  </body>
 </html>
