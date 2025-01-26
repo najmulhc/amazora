@@ -61,6 +61,14 @@ const signUp = async (formElem) => {
     ...user,
   });
 
+  // we want the user_details to be created with the user info given 
+
+  const userDetails = await dataFetcher("rest/v1/user_details", "POST", {
+  id: userId
+    
+  });
+
+  console.log(userDetails);
   if (createdUser.ok) {
     setUser(userId);
   }
@@ -104,7 +112,9 @@ if (signUpForm) {
   });
 }
 const signInForm = document.getElementById("sign-in");
-signInForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  await signIn(signInForm);
-});
+if(signInForm) {
+  signInForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    await signIn(signInForm);
+  });
+}

@@ -22,6 +22,10 @@ export const setState = (info) => {
   setInLocalStorage("state", state);
 };
 
-setState(state)
+const localState = getState();
+
+if(!localState) {
+  setInLocalStorage("state", state);
+}
 
 export default state;

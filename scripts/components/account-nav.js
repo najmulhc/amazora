@@ -8,4 +8,4 @@ async function initializeNav() {
   navElem.appendChild(bottom);
 }
 
-initializeNav();
+export default initializeNav;

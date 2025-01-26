@@ -15,6 +15,7 @@ export const setHeader = async () => {
   header.appendChild(mobileMenu.content);
 
   setCartCountOnHeader();
+  setUserLocation();
 };
 
 export const menuToggler = () => {
@@ -57,3 +58,15 @@ const setCartCountOnHeader = () => {
   const state = getState();
   document.getElementById("cart-count").innerText = state.cartCount;
 };
+
+const setUserLocation = () =>  {
+  const accBtn = document.getElementById("account-btn");
+  const state = getState();
+  if (state.user) {
+ 
+    accBtn.href = "/pages/account/my-account.html";
+  } else {
+
+    accBtn.href = "/pages/auth/sign-in.html";
+  }
+}
