@@ -1,0 +1,55 @@
+<template id="product-info-container">
+  <div id="product-images">
+    <img src="" id="display-image" alt="" />
+    <div id="product-image-thumbnail-container"></div>
+  </div>
+  <div id="product-description">
+    <div id="review-section">
+      <div class="stars">
+        <img src="/assets/icons/product/Star Icon.svg" alt="" />
+        <img src="/assets/icons/product/Star Icon.svg" alt="" />
+        <img src="/assets/icons/product/Star Icon.svg" alt="" />
+        <img src="/assets/icons/product/Star Icon.svg" alt="" />
+        <img src="/assets/icons/product/Star Icon.svg" alt="" />
+      </div>
+
+      <p><span id="review-count"></span> reviews</p>
+    </div>
+    <h2 id="product-title"></h2>
+    <p id="description"></p>
+
+    <div id="price-container">
+      <h2 id="discount-price"></h2>
+      <h3 id="actual-price"></h3>
+    </div>
+
+    <div class="section">
+      <h4>Measurements</h4>
+      <h3 id="measurements"></h3>
+    </div>
+
+    <div>
+      <div id="quantity-selector">
+        <button>+</button>
+        <input type="text" value="1" />
+        <button>-</button>
+      </div>
+      <button>
+        <img src="/assets/icons/product/wishlist.svg" alt="" /> Wishlist
+      </button>
+    </div>
+
+    <button>Add to Cart</button>
+
+    <div id="additional-info">
+      <div>
+        <h5>Sku</h5>
+        <p id="sku"></p>
+      </div>
+      <div>
+        <h5>Categories</h5>
+        <p id="categories-info"></p>
+      </div>
+    </div>
+  </div>
+</template>

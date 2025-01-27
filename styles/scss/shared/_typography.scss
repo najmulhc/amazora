@@ -43,6 +43,14 @@
   font-weight: 500;
   line-height: 1.75rem;
 }
+
+.body-1 {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem; /* 160% */
+}
 .body-2 {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -75,8 +83,8 @@ h2 {
 }
 
 .form-info {
-  color: var(--neutral-04100, #6C7275);
-  font-feature-settings: 'liga' off, 'clig' off;
+  color: var(--neutral-04100, #6c7275);
+  font-feature-settings: "liga" off, "clig" off;
   font-family: Inter;
   font-size: 0.75rem;
   font-style: italic;
