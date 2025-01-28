@@ -13,41 +13,43 @@
         <img src="/assets/icons/product/Star Icon.svg" alt="" />
       </div>
 
-      <p><span id="review-count"></span> reviews</p>
+      <p class="caption-2 " ><span id="review-count"></span>  reviews</p>
     </div>
-    <h2 id="product-title"></h2>
-    <p id="description"></p>
+    <h2 class="heading-4" id="product-title"></h2>
+    <p class="body-2" id="description"></p>
 
     <div id="price-container">
-      <h2 id="discount-price"></h2>
+      <h2 class="heading-6" id="discount-price"></h2>
       <h3 id="actual-price"></h3>
     </div>
 
     <div class="section">
-      <h4>Measurements</h4>
-      <h3 id="measurements"></h3>
+      <h4 class="body-2">Measurements</h4>
+      <h3  class="body-1" id="measurements"></h3>
     </div>
 
-    <div>
-      <div id="quantity-selector">
-        <button>+</button>
-        <input type="text" value="1" />
-        <button>-</button>
+    <div id="call-to-action">
+      <div>
+        <div id="quantity-selector">
+          <button id="quantity-increment">+</button>
+          <input type="number" value="1"  id="quantity"/>
+          <button id="quantity-decrement">-</button>
+        </div>
+        <button id="add-to-wishlist">
+          <img src="/assets/icons/product/wishlist.svg" alt="" /> Wishlist
+        </button>
       </div>
-      <button>
-        <img src="/assets/icons/product/wishlist.svg" alt="" /> Wishlist
-      </button>
+  
+      <button id="add-to-cart">Add to Cart</button>
     </div>
-
-    <button>Add to Cart</button>
 
     <div id="additional-info">
       <div>
-        <h5>Sku</h5>
+        <h5 class="caption-2">Sku</h5>
         <p id="sku"></p>
       </div>
       <div>
-        <h5>Categories</h5>
+        <h5 class="caption-2">Categories</h5>
         <p id="categories-info"></p>
       </div>
     </div>

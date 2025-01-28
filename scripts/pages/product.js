@@ -6,6 +6,7 @@ const title = document.getElementsByTagName(`title`)[0];
 const url = new URL(window.location.href);
 const productId = url.searchParams.get(`id`);
 
+
 const getProductInfo = async (productId) => {
   const productRes = await dataFetcher(
     `/rest/v1/product?id=eq.${productId}`,
@@ -41,8 +42,7 @@ const setProductInfo = async () => {
   const doc = cloned.lastChild;
   const elem = doc.firstChild.firstChild.content;
 
-
-  // the left image section 
+  // the left image section
   elem.getElementById("display-image").src = product.images[0].image_url;
 
   const thumbnailContainer = elem.getElementById(
@@ -56,22 +56,48 @@ const setProductInfo = async () => {
 
     thumbnail.addEventListener("click", () => {
       document.getElementById("display-image").src = image.image_url;
-      
     });
 
     thumbnailContainer.appendChild(thumbnail);
   }
 
-    // the right product info section
-    elem.getElementById("product-title").innerText = product.title;
-elem.getElementById('description').innerText = product.description;
-elem.getElementById("discount-price").innerText = product.discount_price;
-elem.getElementById('actual-price').innerText = product.actual_price;
-elem.getElementById('sku').innerText = product.sku;
+  // the right product info section
+  elem.getElementById("product-title").innerText = product.title;
+  elem.getElementById("description").innerText = product.description;
+  elem.getElementById("discount-price").innerText = "$"+ product.discount_price;
+  elem.getElementById("actual-price").innerText = "$"+ product.actual_price;
+  elem.getElementById("sku").innerText = product.sku;
 
- const categories = product.categories.map(item => item.categories.category_name);
- elem.getElementById('categories-info').innerText= categories.map(t => t.slice(0,-1)).join(" , ")
- elem.getElementById('review-count').innerText = 12;
+  elem.getElementById('measurements').innerText = `${product.height} x ${product.width} x ${product.depth} inches`
+
+  const categories = product.categories.map(
+    (item) => item.categories.category_name
+  );
+  elem.getElementById("categories-info").innerText = categories
+    .map((t) => t.slice(0, -1))
+    .join(" , ");
+  elem.getElementById("review-count").innerText = 12;
+
+ let quantityCount = 1;
+
+const changeQuantity = (value) => {
+    quantityCount += value;
+
+    if(quantityCount < 0) {
+      quantityCount = 0;
+    } 
+     document.getElementById('quantity').value = quantityCount;
+} 
+ 
+ elem.getElementById('quantity-increment').addEventListener("click", e => {
+    e.preventDefault();
+    changeQuantity(1)
+ })
+ elem.getElementById('quantity-decrement').addEventListener("click", e => {
+    e.preventDefault();
+    changeQuantity(-1)
+ })
+
   container.appendChild(elem);
 };
 
@@ -79,6 +105,9 @@ const setProductDetails = () => {
   const container = document.getElementById(`product-details`);
   container.innerText = "Product details";
 };
+
+
+
 
 setProductInfo();
 setProductDetails();
