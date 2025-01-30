@@ -14,6 +14,8 @@ const setUserDetails = async () => {
   document.getElementById("display-name").value = user.display_name;
 };
 
+
+// this is the form handler to handle the account details form
 const form = document.getElementById("account-form");
 if(form) {
   form.addEventListener("submit", async (e) => {
